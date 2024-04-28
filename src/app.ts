@@ -14,12 +14,12 @@ config();
 
 // Constants for the server and API configuration
 const port = process.env.SERVER_PORT || 3040;
-const baseUrl = "https://gpt.freedesk.eu.org";
+const baseUrl = "https://chat.openai.com";
 const apiUrl = `${baseUrl}/backend-anon/conversation`;
 const refreshInterval = 60000; // Interval to refresh token in ms
 const errorWait = 120000; // Wait time in ms after an error
 const newSessionRetries: number =
-  parseInt(process.env.NEW_SESSION_RETRIES) || 5; // Number of retries to get a new session
+  parseInt(process.env.NEW_SESSION_RETRIES) || 500; // Number of retries to get a new session
 const userAgent =
   process.env.USER_AGENT ||
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36";
