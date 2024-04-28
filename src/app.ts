@@ -14,7 +14,7 @@ config();
 
 // Constants for the server and API configuration
 const port = process.env.SERVER_PORT || 3040;
-const baseUrl = "https://chat.openai.com";
+const baseUrl = "https://gpt.freedesk.eu.org";
 const apiUrl = `${baseUrl}/backend-anon/conversation`;
 const refreshInterval = 60000; // Interval to refresh token in ms
 const errorWait = 120000; // Wait time in ms after an error
